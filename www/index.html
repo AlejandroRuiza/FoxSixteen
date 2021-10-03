@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+
+        <title>Fox Sixteen</title>
+    </head>
+    <div id="deviceready">
+        <body style="background-color:#2596BE;">
+            <div class="container" style="background-color:#2596BE;">
+                <b><h1 style="color:white;text-align:center;padding-top:15%;font-size:48px;">Risk Tracker</h1></b>
+                <center>
+                    <img style="align-content: center;text-align: center;padding-top:2%;" height="150" width="150" src="/img/corgi.png">
+                </center>
+                <b><h1 style="text-align: center;padding-top:10%;padding-bottom:10%;color:white;font-size:38px;">Welcome</h1></b>
+                <center>
+                    <button type="button" id="login_button" class="btn" style="background-color:#3A2D2D;color: white;width: 80%;height:50px;font-size:28px;text-align: center; line-height: 30px;">
+                        Log In
+                    </button>
+                </center>
+                <br>
+                <br>
+                <center>
+                    <button type="button" class="btn" id="signup_button" style="background-color:#3A2D2D;color: white;width: 80%;height:50px;font-size:28px;text-align: center; line-height: 30px;">
+                        Sign Up
+                    </button>
+                </center>
+
+            </div>
+            <footer style="background-color:#2596BE;position: absolute;bottom: 0;width: 100%;height: 50px;">
+                <b><u style="color:white"><center><h4 style="color:white;">Fox Sixteen</h4></center></u></b>
+            </footer>
+            <!--
+                <h1></h1>
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received">Device asasa Ready</p>
+                </div>
+            -->
+            <script src="js/bootstrap/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/bootstrap/bootstrap.min.js"></script>
+            <script src="cordova.js"></script>
+            <script src="js/index.js"></script>
+        </body>
+    </div>
+</html>
